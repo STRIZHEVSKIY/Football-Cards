@@ -3,27 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Резюме</title>
 </head>
 <body>
-    <h1 class="title">Team stats</h1>
-    <main>
-      <div class="team-stats">
-        <p>Team: <span id="team"></span></p>
-        <p>Year: <span id="year"></span></p>
-        <p>Head coach: <span id="head-coach"></span></p>
+    <div class="page-wrapper">
+      <header class="header" id="header">
+        <button class="burger-btn" id="burger-btn">
+            <span></span><span></span><span></span>
+          </button>
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li><a href="#welcome-section" class="nav-element">Обо мне</a></li>
+                <li><a href="#project-section" class="nav-element">Проекты</a></li>
+                <li><a href="#portfile-link" class="nav-element">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="welcome-section">
+      <div class="welcome-info-part">
+        <h1>Привет, Я Антон</h1>
+        <p>Frontend-разработчик</p>
       </div>
-      <label class="options-label" for="players">Filter Teammates:</label>
-      <select name="players" id="players">
-        <option value="all">All Players</option>
-        <option value="forward">Position Forward</option>
-        <option value="midfielder">Position Midfielder</option>
-        <option value="defender">Position Defender</option>
-        <option value="goalkeeper">Position Goalkeeper</option>
-      </select>
-      <div class="cards" id="player-cards"></div>
-    </main>
-    <script src="./script.js"></script>
+    </section>
+
+    <section id="project-section">
+      <h2>Некоторые из моих проектов</h2>
+      <div class="underline"></div>
+
+      <div class="project-tile">
+
+        <div class="project-element">
+          <figure class="project-info">
+            <a href="https://strizhevskiy.github.io/Grid_Practice/" target="_blank"> <img src="Снимок экрана 2025-08-01 134904.png" alt=""></a>
+            <div class="chevrons">
+              <i class="fa-solid fa-chevron-left fa-lg"></i>
+              <figcaption class="project-name">Применение гридов</figcaption>
+              <i class="fa-solid fa-chevron-right fa-lg"></i>
+            </div>
+          </figure>
+        </div>
+
+        <div class="project-element">
+          <figure class="project-info">
+            <a href="https://strizhevskiy.github.io/Flexbox-Gallery/" target="_blank"><img src="gallery.png" alt=""> </a>
+            <div class="chevrons">
+              <i class="fa-solid fa-chevron-left fa-lg"></i>
+              <figcaption class="project-name">Галерея Flexbox</figcaption>
+              <i class="fa-solid fa-chevron-right fa-lg"></i>
+            </div>
+          </figure>
+        </div>
+
+        <div class="project-element">
+          <figure class="project-info">
+            <a href="https://strizhevskiy.github.io/Rock-Paper-Scissors/" target="_blank"> <img src="Снимок экрана 2025-11-12 214324.png" alt=""> </a>
+            <div class="chevrons">
+              <i class="fa-solid fa-chevron-left fa-lg"></i>
+              <figcaption class="project-name">Камень, ножницы, бумага</figcaption>
+              <i class="fa-solid fa-chevron-right fa-lg"></i>
+            </div>
+          </figure>
+        </div>
+
+        <div class="project-element">
+          <figure class="project-info">
+            <a href="https://strizhevskiy.github.io/Football-Cards/" target="_blank"><img src="footvall cards.png" alt=""> </a>
+            <div class="chevrons">
+              <i class="fa-solid fa-chevron-left fa-lg"></i>
+              <figcaption class="project-name">Football Cards (Работа с DOM)</figcaption>
+              <i class="fa-solid fa-chevron-right fa-lg"></i>
+            </div>
+          </figure>
+        </div>
+
+      </div>
+      
+      <div class="button">
+        <div id="show-all-button">
+          <button onclick="alert('Будет позже')" class="show-all" type="button" value="Show all"><span>Показать всё</span></button>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-chevron-right fa-sm"></i>
+        </div>
+      </div>
+        
+
+    </section>
+
+    <section id="portfile-link">
+      <div id="portfile-info">
+        <h2>Давайте работать вместе!</h2>
+        <p>Контакты</p>        
+      </div>
+      <div id="pick-me-btn">
+        <button id="contact-btn"><span>Контакты<br>(нажми на меня)</span></button>
+      </div>
+      <div id="links-navbar">
+        <a href="https://github.com/STRIZHEVSKIY" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://vk.com/antonstrizhevskiy" target="_blank">
+          <i class="fa-solid fa-v"></i>
+          VK
+        </a>
+        <a href="https://t.me/strizhevskiy" target="_blank">
+          <i class="fa-solid fa-paper-plane"></i>  
+          Telegram
+        </a>
+        <a href="tel:89912400200" target="_blank">
+          <i class="fa-solid fa-mobile-screen"></i>
+          Позвонить
+        </a>
+      </div>
+    </section>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
